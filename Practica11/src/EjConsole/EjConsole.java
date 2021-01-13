@@ -8,10 +8,11 @@ package EjConsole;
 import java.io.Console;
 
 /**
- *
- * @author socce
+ *  clase EjConsole util para crear un Login (para su uso es necesario usar una terminal)
+ * @author Equipo D
  */
 public class EjConsole {
+    
     public static void main(String[] args) {
         Console consola = System.console();
         System.out.println("usuario");

@@ -11,11 +11,14 @@ import java.io.ObjectInputStream;
 import java.util.Date;
 
 /**
- *
- * @author socce
+ * Clase Deserializador para descodificar un objeto de un archivo de entrada
+ * @author Equipo D
  */
 public class Deserializador {
-
+    
+    /**
+     * Constructo que al ser invocado recibe un archivo de entrada y lo deserializar
+     */
     public Deserializador() {
         Date fecha = null;
         

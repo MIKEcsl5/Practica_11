@@ -11,8 +11,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- *
- * @author socce
+ * Clase principal donde abrimos un archivo o lo creamos segun su existencia y donde escribimos texto en un archivo
+ * @author Equipo D
  */
 public class Practica11 {
 
@@ -20,18 +20,22 @@ public class Practica11 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        System.out.println("*************** Actividad 1 *****************");
         
+        /**
+         * Actividad 1: crear un archivo y comprobar su existencia
+         */
+        System.out.println("*************** Actividad 1 *****************");
         try{
             File archivo = new File("miArchivo.txt");
             System.out.println(archivo.exists());
             boolean seCreo = archivo.createNewFile();
             System.out.println("Se creo? "+seCreo);
             System.out.println(archivo.exists());
-            
-            
         }catch(IOException e){}
         
+        /**
+         * Actividad 2: escribir en un archivo de salida datos de entrada por teclado usando un arreglo de bytes
+         */
         System.out.println("*************** Actividad 2 *****************");
         System.out.println("FileOutputStream");
         FileOutputStream fos = null;
@@ -50,6 +54,10 @@ public class Practica11 {
                 }catch(IOException i){}
             }
         }
+        
+        /**
+         * Actividad 3: Leer un archivo de entrada
+         */
         System.out.println("*************** Actividad 3 *****************");
         System.out.println("FileInputStream");
         FileInputStream fis = null;

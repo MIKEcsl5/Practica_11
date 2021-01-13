@@ -6,12 +6,17 @@
 package Serializar;
 
 /**
- *
- * @author socce
+ * Clase SerializarFecha que crea un objeto serializador y posteriormete crea un objeto deserializador
+ * @author Equipo D
  */
 public class SerializarFecha {
+    
+    /**
+     * Funcion main que crea 1 objeto de la clase Serializador y posteriormente Deserializa un objeto
+     * @param args 
+     */
     public static void main(String[] args) {
         Serializador sria = new Serializador();
-        
+        Deserializador desSria = new Deserializador();
     }
 }

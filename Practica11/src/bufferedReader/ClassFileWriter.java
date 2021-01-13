@@ -14,11 +14,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- *
- * @author socce
+ * clase ClassFileWriter, aqui se escribio dentro de un archivo y se leyo el contenido de un archivo
+ * @author Equipo D
  */
 public class ClassFileWriter {
     public static void main(String[] args) {
+        /**
+         * Actividad 4: escribir en un archivo con datos de entrada por teclado
+         */
         System.out.println("*************** Actividad 4 *****************");
         System.out.println("InputStreamReader");
         String texto = "";
@@ -35,6 +38,9 @@ public class ClassFileWriter {
             salida.close();
         }catch(IOException ioe2){}
         
+        /**
+         * Leer contenido de un archivo de entrada linea por linea hasta el final del archivo
+         */
         System.out.println("*************** Actividad 5 *****************");
         System.out.println("FileReader");
         try{

@@ -11,17 +11,19 @@ import java.io.ObjectOutputStream;
 import java.util.Date;
 
 /**
- *
- * @author socce
+ * Clase Serializador que codifica un objeto para ser guardado en un dispositivo de almacenamiento
+ * @author Equipo D
  */
 public class Serializador {
-
+    /**
+     * Constructo que al ser invocado crea un objeto de la clase Date y lo serializa
+     */
     public Serializador() {
         Date fechaActual = new Date();
         System.out.println(fechaActual);
         
         try{
-            FileOutputStream fos = new FileOutputStream("Objeto.txt");
+            FileOutputStream fos = new FileOutputStream("Objeto.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(fechaActual);
             oos.close();
